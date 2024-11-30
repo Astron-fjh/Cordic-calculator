@@ -11,3 +11,5 @@
 #-----------------------------------------------------------
 start_gui
 open_project E:/Github_project/Cordic_calculator/Cordic_calculator_vga_ps2/Cordic_calculator.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
