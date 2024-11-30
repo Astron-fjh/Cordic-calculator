@@ -1,0 +1,327 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim
+T_opt
+!s110 1697028946
+VbN1@jnSYXSQ5Sn4K`jJ5D0
+Z1 04 9 4 work testbench fast 0
+Z2 04 4 4 work glbl fast 0
+=1-c01850ceb55d-65269b51-3a8-55f4
+Z3 o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1699824550
+Vfoh^4eziFd8EXz6M^lEo02
+R1
+R2
+=1-c01850ceb55d-655143a6-1f9-c02c
+R3
+R4
+n@_opt1
+R5
+T_opt2
+!s110 1699822068
+V:<JH>FQjdaGFm56RkE9TC3
+R1
+R2
+=1-c01850ceb55d-655139f4-c3-a04c
+R3
+R4
+n@_opt2
+R5
+R0
+vbcd2bin
+!s10a 1696936143
+Z6 !s110 1696750858
+!i10b 1
+!s100 zLTca5iig31jQ=A_=4]Da0
+Z7 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I_2;DfEaSLh564h<WFI0Hm2
+R0
+w1696738237
+8../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v
+F../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v
+!i122 0
+L0 12 15
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z10 !s108 1696750857.000000
+Z11 !s107 ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v|../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v|../../../../Cordic_calculator.srcs/sources_1/new/seg7.v|../../../../Cordic_calculator.srcs/sources_1/new/display.v|../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v|../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v|
+Z12 !s90 -64|-incr|-work|xil_defaultlib|../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v|../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v|../../../../Cordic_calculator.srcs/sources_1/new/display.v|../../../../Cordic_calculator.srcs/sources_1/new/seg7.v|../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v|../../../../Cordic_calculator.srcs/sim_1/new/testbench.v|
+!i113 0
+Z13 o-64 -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vbin2bcd_54bits
+Z14 !s110 1699824545
+!i10b 1
+!s100 6RM`NbaRlHZLzU9C9Y;N22
+R7
+IDXGRiSJ5=RA[HoPa5[Fib2
+R0
+w1699824067
+8../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v
+F../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v
+!i122 79
+L0 23 163
+R8
+R9
+r1
+!s85 0
+31
+Z15 !s108 1699824545.000000
+Z16 !s107 ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v|../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v|../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v|../../../../Cordic_calculator.srcs/sources_1/new/seg7.v|../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v|../../../../Cordic_calculator.srcs/sources_1/new/int2float.v|../../../../Cordic_calculator.srcs/sources_1/new/display.v|../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v|../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v|../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v|../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v|
+Z17 !s90 -64|-incr|-work|xil_defaultlib|../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v|../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v|../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v|../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v|../../../../Cordic_calculator.srcs/sources_1/new/display.v|../../../../Cordic_calculator.srcs/sources_1/new/int2float.v|../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v|../../../../Cordic_calculator.srcs/sources_1/new/seg7.v|../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v|../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v|../../../../Cordic_calculator.srcs/sim_1/new/testbench.v|
+!i113 0
+R13
+R4
+vcordic_sin_cos
+!s10a 1699820856
+Z18 !s110 1699820896
+!i10b 1
+!s100 FYn?BcEKZh[Vn`D8bI4ad3
+R7
+I;dQ_XCDo71a_EPmIn=V3l1
+R0
+w1699820856
+8../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v
+F../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v
+!i122 73
+L0 12 523
+R8
+R9
+r1
+!s85 0
+31
+Z19 !s108 1699820896.000000
+R16
+R17
+!i113 0
+R13
+R4
+vCordic_top
+R14
+!i10b 1
+!s100 V5;05A7S:zUS:n4Rjg@9H2
+R7
+ILB9zOzo_jf48Wh_VVbn^12
+R0
+w1699824188
+8../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v
+F../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v
+!i122 79
+L0 12 106
+R8
+R9
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R13
+R4
+n@cordic_top
+vdisplay
+!s10a 1699533199
+!s110 1699535420
+!i10b 1
+!s100 Y6W1lRijLSJXhAPijmEo62
+R7
+I@L]<z]=16h9;@Wz<MLnDG2
+R0
+w1699533199
+8../../../../Cordic_calculator.srcs/sources_1/new/display.v
+F../../../../Cordic_calculator.srcs/sources_1/new/display.v
+!i122 45
+L0 13 39
+R8
+R9
+r1
+!s85 0
+31
+!s108 1699535420.000000
+R16
+R17
+!i113 0
+R13
+R4
+vglbl
+R14
+!i10b 1
+!s100 DCW3=ePZ4oEojGg2KL;HS0
+R7
+ITNN_cbZIG@:>zYe@^CH>f0
+R0
+w1544155481
+8glbl.v
+Fglbl.v
+!i122 80
+L0 6 65
+R8
+R9
+r1
+!s85 0
+31
+R15
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vint2float
+!s10a 1699820801
+R18
+!i10b 1
+!s100 LHC>5O6JPd04i]fUKfhiS1
+R7
+IDedFQz0YA11jIT0R@AHPh1
+R0
+w1699820801
+8../../../../Cordic_calculator.srcs/sources_1/new/int2float.v
+F../../../../Cordic_calculator.srcs/sources_1/new/int2float.v
+!i122 73
+L0 12 457
+R8
+R9
+r1
+!s85 0
+31
+R19
+R16
+R17
+!i113 0
+R13
+R4
+vkey_scan
+!s10a 1696938551
+!s110 1696938556
+!i10b 1
+!s100 AjjiCZDT8l^RJnN3lMJdG2
+R7
+IEP_eaHB:MKPmRcVPTC=2_3
+R0
+w1696938551
+8../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v
+F../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v
+!i122 15
+L0 12 41
+R8
+R9
+r1
+!s85 0
+31
+!s108 1696938556.000000
+!s107 ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v|../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v|../../../../Cordic_calculator.srcs/sources_1/new/seg7.v|../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v|../../../../Cordic_calculator.srcs/sources_1/new/display.v|../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v|../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v|../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v|../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v|../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v|../../../../Cordic_calculator.srcs/sources_1/new/display.v|../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v|../../../../Cordic_calculator.srcs/sources_1/new/seg7.v|../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v|../../../../Cordic_calculator.srcs/sim_1/new/testbench.v|
+!i113 0
+R13
+R4
+vseg7
+!s10a 1696738062
+R6
+!i10b 1
+!s100 fa1?M=LD3SJ5GdkE^AbdZ1
+R7
+Ie?z91g?]H<9^dRJGo7KAn1
+R0
+w1696738062
+8../../../../Cordic_calculator.srcs/sources_1/new/seg7.v
+F../../../../Cordic_calculator.srcs/sources_1/new/seg7.v
+!i122 0
+Z20 L0 13 21
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+vseg_select
+R14
+!i10b 1
+!s100 3FmN`93z?L7kZ]b2gB[iI2
+R7
+IUQ:QY6@]TY<YQIQ@_Hz2a1
+R0
+w1699824236
+8../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v
+F../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v
+!i122 79
+L0 23 28
+R8
+R9
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R13
+R4
+vswitch2bcd
+!s10a 1696838626
+R6
+!i10b 1
+!s100 HFCUMTBI7PzFWdWmS@PF>2
+R7
+Iio`daiik1L>L=Ij4QOE;a0
+R0
+w1696738892
+8../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v
+F../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v
+!i122 0
+R20
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+vtestbench
+R14
+!i10b 1
+!s100 <`En6713EWHcm1k`94Nnm0
+R7
+I`Qd^_TLmiN0a:;WW:C[=R1
+R0
+w1699822345
+8../../../../Cordic_calculator.srcs/sim_1/new/testbench.v
+F../../../../Cordic_calculator.srcs/sim_1/new/testbench.v
+!i122 79
+L0 12 69
+R8
+R9
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R13
+R4

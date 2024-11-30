@@ -1,0 +1,25 @@
+# do {testbench_compile.do}
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 05:47:11 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib testbench_func_impl.v ../../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Compiling module bin2bcd_54bits
+# -- Compiling module cordic_sin_cos
+# -- Compiling module display
+# -- Compiling module int2float
+# -- Compiling module key_scan
+# -- Compiling module seg7
+# -- Compiling module seg_select
+# -- Compiling module switch2bcd
+# -- Compiling module glbl
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	glbl
+# 	testbench
+# End time: 05:47:12 on Nov 13,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

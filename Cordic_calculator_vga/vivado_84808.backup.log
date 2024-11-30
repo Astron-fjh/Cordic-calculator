@@ -1,0 +1,2484 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Nov  9 15:10:20 2023
+# Process ID: 84808
+# Current directory: E:/Vivado/Cordic_calculator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9700 E:\Vivado\Cordic_calculator\Cordic_calculator.xpr
+# Log file: E:/Vivado/Cordic_calculator/vivado.log
+# Journal file: E:/Vivado/Cordic_calculator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Vivado/Cordic_calculator/Cordic_calculator.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 861.020 ; gain = 234.953
+update_compile_order -fileset sources_1
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:23:40 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Skipping module bcd2bin
+# -- Compiling module bin2bcd_54bits
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(246): (vlog-2182) 'num_0' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(244): (vlog-2182) 'num_1' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(242): (vlog-2182) 'num_2' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(240): (vlog-2182) 'num_3' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(238): (vlog-2182) 'num_4' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(236): (vlog-2182) 'num_5' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(234): (vlog-2182) 'num_6' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(232): (vlog-2182) 'num_7' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(230): (vlog-2182) 'num_8' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(228): (vlog-2182) 'num_9' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(226): (vlog-2182) 'num_10' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(224): (vlog-2182) 'num_11' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(222): (vlog-2182) 'num_12' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(220): (vlog-2182) 'num_13' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(218): (vlog-2182) 'num_14' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(216): (vlog-2182) 'num_15' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(214): (vlog-2182) 'num_16' might be read before written in always_comb or always @* block.
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:23:40 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 18
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:23:41 on Nov 09,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 15:23:41 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=81468)
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:32:38 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Compiling module cordic_sin_cos
+# -- Skipping module display
+# -- Compiling module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 16:32:38 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:32:38 on Nov 09,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 16:32:38 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=48820)
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:34:23 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 16:34:23 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:34:23 on Nov 09,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 16:34:23 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=71300)
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:49:55 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Compiling module bin2bcd_54bits
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(246): (vlog-2182) 'num_0' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(244): (vlog-2182) 'num_1' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(242): (vlog-2182) 'num_2' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(240): (vlog-2182) 'num_3' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(238): (vlog-2182) 'num_4' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(236): (vlog-2182) 'num_5' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(234): (vlog-2182) 'num_6' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(232): (vlog-2182) 'num_7' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(230): (vlog-2182) 'num_8' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(228): (vlog-2182) 'num_9' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(226): (vlog-2182) 'num_10' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(224): (vlog-2182) 'num_11' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(222): (vlog-2182) 'num_12' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(220): (vlog-2182) 'num_13' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(218): (vlog-2182) 'num_14' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(216): (vlog-2182) 'num_15' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(214): (vlog-2182) 'num_16' might be read before written in always_comb or always @* block.
+# -- Compiling module cordic_sin_cos
+# -- Skipping module display
+# -- Compiling module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 16:49:55 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 18
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:49:55 on Nov 09,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 16:49:55 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=14456)
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:06:18 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Skipping module bcd2bin
+# -- Compiling module bin2bcd_54bits
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(244): (vlog-2182) 'num_0' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(242): (vlog-2182) 'num_1' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(240): (vlog-2182) 'num_2' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(238): (vlog-2182) 'num_3' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(236): (vlog-2182) 'num_4' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(234): (vlog-2182) 'num_5' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(232): (vlog-2182) 'num_6' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(230): (vlog-2182) 'num_7' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(228): (vlog-2182) 'num_8' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(226): (vlog-2182) 'num_9' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(224): (vlog-2182) 'num_10' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(222): (vlog-2182) 'num_11' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(220): (vlog-2182) 'num_12' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(218): (vlog-2182) 'num_13' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(216): (vlog-2182) 'num_14' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(214): (vlog-2182) 'num_15' might be read before written in always_comb or always @* block.
+# ** Warning: ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v(212): (vlog-2182) 'num_16' might be read before written in always_comb or always @* block.
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 18:06:18 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 18
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:06:18 on Nov 09,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 18:06:18 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=25956)
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:10:57 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 18:10:58 on Nov 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:10:58 on Nov 09,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 18:10:58 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=23532)
+close [ open E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/seg_select.v w ]
+add_files E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/seg_select.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Nov  9 20:52:33 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Thu Nov  9 20:52:33 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Nov  9 21:00:33 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Thu Nov  9 21:00:33 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183741427A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183741427A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183741427A
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:10:20 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Compiling module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Compiling module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:10:20 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:10:20 on Nov 09,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 21:10:20 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=61140)
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:42:12 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Compiling module seg_select
+# -- Skipping module switch2bcd
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:42:12 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:42:12 on Nov 09,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 21:42:12 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=18604)
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:02:40 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Compiling module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:02:40 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:02:40 on Nov 09,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 22:02:40 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=79672)
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:25:30 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:25:30 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:25:30 on Nov 09,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 22:25:30 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=87128)
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Nov  9 22:32:03 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Thu Nov  9 22:32:03 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:34:44 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:34:44 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:34:44 on Nov 09,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 22:34:44 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=69928)
+launch_simulation -install_path D:/modeltech64_2020.4/win64 -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 719 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/constrs_1/new/Cordic_calculator.xdc]
+Finished Parsing XDC File [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/constrs_1/new/Cordic_calculator.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2887.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2887.953 ; gain = 0.000
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim/testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim/testbench_func_synth.v
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:36:07 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib testbench_func_synth.v ../../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Compiling module bin2bcd_54bits
+# -- Compiling module bin2bcd_54bits_0
+# -- Compiling module cordic_sin_cos
+# -- Compiling module display
+# -- Compiling module int2float
+# -- Compiling module key_scan
+# -- Compiling module seg7
+# -- Compiling module seg_select
+# -- Compiling module switch2bcd
+# -- Compiling module glbl
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	glbl
+# 	testbench
+# End time: 22:36:07 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+Program launched (PID=90116)
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2887.953 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov  9 22:47:34 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Thu Nov  9 22:47:34 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov  9 22:49:30 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Thu Nov  9 22:49:30 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov  9 22:53:00 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Thu Nov  9 22:53:00 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:03:56 on Nov 09,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Compiling module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 23:03:56 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:03:56 on Nov 09,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 23:03:56 on Nov 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=72040)
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov  9 23:21:06 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Thu Nov  9 23:21:06 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183741427A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183741427A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183741427A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183741427A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+INFO: [Netlist 29-17] Analyzing 715 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/constrs_1/new/Cordic_calculator.xdc]
+Finished Parsing XDC File [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/constrs_1/new/Cordic_calculator.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183741427A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183741427A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_simulation -install_path D:/modeltech64_2020.4/win64 -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim/testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim/testbench_func_synth.v
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:43:27 on Nov 10,2023
+# vlog -64 -incr -work xil_defaultlib testbench_func_synth.v ../../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Compiling module bin2bcd_54bits
+# -- Compiling module bin2bcd_54bits_0
+# -- Compiling module cordic_sin_cos
+# -- Compiling module display
+# -- Compiling module int2float
+# -- Compiling module key_scan
+# -- Compiling module seg7
+# -- Compiling module seg_select
+# -- Compiling module switch2bcd
+# -- Compiling module glbl
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	glbl
+# 	testbench
+# End time: 21:43:28 on Nov 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+Program launched (PID=50740)
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 715 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.308 . Memory (MB): peak = 3182.340 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.308 . Memory (MB): peak = 3182.340 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3182.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:13:08 on Nov 10,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:13:08 on Nov 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:13:08 on Nov 10,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 22:13:08 on Nov 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=15260)
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183741427A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183741427A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:08:53 on Nov 12,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:08:53 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:08:53 on Nov 12,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 22:08:53 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=24804)
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:38:23 on Nov 12,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Compiling module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:38:23 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:38:23 on Nov 12,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 22:38:23 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=70224)
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Nov 12 22:42:30 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Sun Nov 12 22:42:30 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:52:25 on Nov 12,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:52:25 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:52:25 on Nov 12,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 22:52:25 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=86872)
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Sun Nov 12 22:58:52 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_design synth_1
+close_design
+launch_simulation -install_path D:/modeltech64_2020.4/win64 -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 713 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/constrs_1/new/Cordic_calculator.xdc]
+Finished Parsing XDC File [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/constrs_1/new/Cordic_calculator.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3503.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim/testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim/testbench_func_synth.v
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:02:39 on Nov 12,2023
+# vlog -64 -incr -work xil_defaultlib testbench_func_synth.v ../../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Compiling module bin2bcd_54bits
+# -- Compiling module bin2bcd_54bits_0
+# -- Compiling module cordic_sin_cos
+# -- Compiling module display
+# -- Compiling module int2float
+# -- Compiling module key_scan
+# -- Compiling module seg7
+# -- Compiling module seg_select
+# -- Compiling module switch2bcd
+# -- Compiling module glbl
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	glbl
+# 	testbench
+# End time: 23:02:39 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+Program launched (PID=63248)
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Nov 12 23:24:02 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Sun Nov 12 23:24:02 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Nov 12 23:25:08 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Sun Nov 12 23:25:08 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Nov 12 23:27:45 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Sun Nov 12 23:27:45 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183741427A
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [Labtools 27-3419] Disconnecting from hw_server since it's not responding to requests.  It is recommended to investigate hw_server to find any issues.
+INFO: [Labtools 27-2058] connect_hw_server command cancelled.
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:25 . Memory (MB): peak = 3503.215 ; gain = 0.000
+INFO: [Common 17-344] 'connect_hw_server' was cancelled
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Nov 12 23:37:19 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Sun Nov 12 23:37:19 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183741427A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183741427A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183741427A
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits_new.v w ]
+add_files E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits_new.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+current_design impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183741427A
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 03:21:07 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits_new.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Skipping module bcd2bin
+# -- Compiling module bin2bcd_54bits
+# -- Compiling module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Compiling module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 03:21:07 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 03:21:07 on Nov 13,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 03:21:07 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=24632)
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 03:38:35 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits_new.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Compiling module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 03:38:35 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 03:38:35 on Nov 13,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 03:38:35 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=45904)
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 03:41:51 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits_new.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Compiling module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 03:41:51 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 03:41:51 on Nov 13,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 03:41:51 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=94360)
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 03:46:22 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits_new.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Compiling module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 03:46:22 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 03:46:22 on Nov 13,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 03:46:22 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=76336)
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 04:05:38 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits_new.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Compiling module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 04:05:38 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 04:05:39 on Nov 13,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 04:05:39 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=39212)
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Nov 13 04:10:32 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Mon Nov 13 04:10:32 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Nov 13 04:11:16 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Mon Nov 13 04:11:16 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+close_design
+close_design
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183741427A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Mon Nov 13 04:28:03 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Mon Nov 13 04:28:03 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 04:28:16 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Skipping module bcd2bin
+# -- Compiling module bin2bcd_54bits
+# -- Compiling module cordic_sin_cos
+# -- Skipping module display
+# -- Compiling module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 04:28:16 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 04:28:16 on Nov 13,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 04:28:16 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=82788)
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Mon Nov 13 04:30:34 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Mon Nov 13 04:30:34 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 04:39:20 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 04:39:20 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 04:39:20 on Nov 13,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 04:39:20 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=25020)
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Mon Nov 13 04:42:08 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 693 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.286 . Memory (MB): peak = 3529.449 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.287 . Memory (MB): peak = 3529.449 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3529.449 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183741427A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183741427A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183741427A
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 04:47:42 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Skipping module Cordic_top
+# -- Skipping module bcd2bin
+# -- Skipping module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Skipping module seg_select
+# -- Skipping module switch2bcd
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 04:47:42 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 04:47:42 on Nov 13,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 04:47:42 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=70748)
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Mon Nov 13 04:54:18 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Mon Nov 13 04:54:18 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Mon Nov 13 05:07:00 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Mon Nov 13 05:07:00 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Mon Nov 13 05:24:06 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Mon Nov 13 05:24:06 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation -install_path D:/modeltech64_2020.4/win64
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 05:29:05 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Skipping module bcd2bin
+# -- Compiling module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Compiling module seg_select
+# -- Skipping module switch2bcd
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 05:29:05 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 05:29:05 on Nov 13,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 05:29:05 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/behav/modelsim'
+Program launched (PID=39332)
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Mon Nov 13 05:32:54 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Mon Nov 13 05:32:54 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation -install_path D:/modeltech64_2020.4/win64 -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 697 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/constrs_1/new/Cordic_calculator.xdc]
+Finished Parsing XDC File [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/constrs_1/new/Cordic_calculator.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3529.449 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim/testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim/testbench_func_synth.v
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 05:43:49 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib testbench_func_synth.v ../../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Compiling module bin2bcd_54bits
+# -- Compiling module cordic_sin_cos
+# -- Compiling module display
+# -- Compiling module int2float
+# -- Compiling module key_scan
+# -- Compiling module seg7
+# -- Compiling module seg_select
+# -- Compiling module switch2bcd
+# -- Compiling module glbl
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	glbl
+# 	testbench
+# End time: 05:43:49 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/synth/func/modelsim'
+Program launched (PID=2008)
+current_design impl_1
+close_design
+launch_simulation -install_path D:/modeltech64_2020.4/win64 -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/impl/func/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [Netlist 29-17] Analyzing 697 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.276 . Memory (MB): peak = 3696.414 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.276 . Memory (MB): peak = 3696.414 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3696.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode funcsim -nolib -force -file "E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/impl/func/modelsim/testbench_func_impl.v"
+INFO: [SIM-utils-36] Netlist generated:E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/impl/func/modelsim/testbench_func_impl.v
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/modeltech64_2020.4/Vivado2018.3_lib/modelsim.ini' copied to run dir:'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/impl/func/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/impl/func/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {testbench_compile.do}
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 05:47:11 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib testbench_func_impl.v ../../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Compiling module bin2bcd_54bits
+# -- Compiling module cordic_sin_cos
+# -- Compiling module display
+# -- Compiling module int2float
+# -- Compiling module key_scan
+# -- Compiling module seg7
+# -- Compiling module seg_select
+# -- Compiling module switch2bcd
+# -- Compiling module glbl
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	glbl
+# 	testbench
+# End time: 05:47:12 on Nov 13,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/impl/func/modelsim'
+Program launched (PID=17664)
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Nov 13 06:01:15 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Mon Nov 13 06:01:16 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+close_design
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Mon Nov 13 06:06:41 2023] Launched synth_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/runme.log
+[Mon Nov 13 06:06:41 2023] Launched impl_1...
+Run output will be captured here: E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 697 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.255 . Memory (MB): peak = 3696.414 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.256 . Memory (MB): peak = 3696.414 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3696.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183741427A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183741427A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183741427A
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183741427A
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 06:11:50 2023...

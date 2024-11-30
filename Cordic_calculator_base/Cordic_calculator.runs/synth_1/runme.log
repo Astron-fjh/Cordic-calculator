@@ -1,0 +1,908 @@
+
+*** Running vivado
+    with args -log Cordic_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Cordic_top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Cordic_top.tcl -notrace
+Command: synth_design -top Cordic_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 42156 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 456.969 ; gain = 96.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Cordic_top' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/Cordic_top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'switch2bcd' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/switch2bcd.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'switch2bcd' (1#1) [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/switch2bcd.v:13]
+INFO: [Synth 8-6157] synthesizing module 'display' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/display.v:13]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/display.v:31]
+INFO: [Synth 8-6157] synthesizing module 'seg7' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/seg7.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'seg7' (2#1) [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/seg7.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'display' (3#1) [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/display.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bcd2bin' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/bcd2bin.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'bcd2bin' (4#1) [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/bcd2bin.v:12]
+INFO: [Synth 8-6157] synthesizing module 'key_scan' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/key_scan.v:12]
+	Parameter CNT_10MS bound to: 24'b100110001001011010000000 
+INFO: [Synth 8-6155] done synthesizing module 'key_scan' (5#1) [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/key_scan.v:12]
+INFO: [Synth 8-6157] synthesizing module 'cordic_sin_cos' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:12]
+	Parameter rot_0 bound to: 2949120 - type: integer 
+	Parameter rot_1 bound to: 1740970 - type: integer 
+	Parameter rot_2 bound to: 919876 - type: integer 
+	Parameter rot_3 bound to: 466944 - type: integer 
+	Parameter rot_4 bound to: 234376 - type: integer 
+	Parameter rot_5 bound to: 117303 - type: integer 
+	Parameter rot_6 bound to: 58668 - type: integer 
+	Parameter rot_7 bound to: 29334 - type: integer 
+	Parameter rot_8 bound to: 14667 - type: integer 
+	Parameter rot_9 bound to: 7333 - type: integer 
+	Parameter rot_10 bound to: 3670 - type: integer 
+	Parameter rot_11 bound to: 1835 - type: integer 
+	Parameter rot_12 bound to: 918 - type: integer 
+	Parameter rot_13 bound to: 459 - type: integer 
+	Parameter rot_14 bound to: 229 - type: integer 
+	Parameter rot_15 bound to: 118 - type: integer 
+	Parameter PIPELINE bound to: 5'b10000 
+	Parameter KN bound to: 39797 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter START_CAL bound to: 2'b01 
+	Parameter WAIT_CAL bound to: 2'b10 
+	Parameter FINISH_CAL bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:82]
+INFO: [Synth 8-226] default block is never used [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:109]
+WARNING: [Synth 8-6014] Unused sequential element z16_reg was removed.  [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:516]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_sin_cos' (6#1) [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:12]
+INFO: [Synth 8-6157] synthesizing module 'int2float' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/int2float.v:12]
+	Parameter IDLE bound to: 2'b00 
+	Parameter START_TO bound to: 2'b01 
+	Parameter WAIT_TO bound to: 2'b10 
+	Parameter FINISH_TO bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/int2float.v:61]
+INFO: [Synth 8-226] default block is never used [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/int2float.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'int2float' (7#1) [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/int2float.v:12]
+INFO: [Synth 8-6157] synthesizing module 'bin2bcd_54bits' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v:23]
+	Parameter IDLE bound to: 2'b00 
+	Parameter START_TO bound to: 2'b01 
+	Parameter FINISH_TO bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'bin2bcd_54bits' (8#1) [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg_select' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/seg_select.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seg_select' (9#1) [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/seg_select.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Cordic_top' (10#1) [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/Cordic_top.v:12]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[31]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[30]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[29]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[28]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[27]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[26]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[25]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[24]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[23]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[22]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[21]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[20]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[19]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[18]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[17]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[31]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[30]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[29]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[28]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[27]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[26]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[25]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[24]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[23]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[22]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[21]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[20]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[19]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[18]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 516.801 ; gain = 155.977
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 516.801 ; gain = 155.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 516.801 ; gain = 155.977
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/constrs_1/new/Cordic_calculator.xdc]
+Finished Parsing XDC File [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/constrs_1/new/Cordic_calculator.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/constrs_1/new/Cordic_calculator.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Cordic_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Cordic_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 872.168 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 872.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 872.168 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 872.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 872.168 ; gain = 511.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 872.168 ; gain = 511.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 872.168 ; gain = 511.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "key_n" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:173]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:196]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:196]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:196]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:219]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:219]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:219]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:242]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:242]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:242]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:265]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:265]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:265]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:288]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:288]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:288]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:311]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:311]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:334]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:334]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:357]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:357]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:380]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:380]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:403]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:403]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:426]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:426]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:449]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:449]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:472]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:472]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:495]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:495]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:518]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:518]
+INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'cordic_sin_cos'
+INFO: [Synth 8-5544] ROM "finish" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sin" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "x0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'int2float'
+INFO: [Synth 8-5544] ROM "finish" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sin" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "x0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'bin2bcd_54bits'
+INFO: [Synth 8-5544] ROM "finish" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+               START_CAL |                               01 |                               01
+                WAIT_CAL |                               10 |                               10
+              FINISH_CAL |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cstate_reg' using encoding 'sequential' in module 'cordic_sin_cos'
+WARNING: [Synth 8-327] inferring latch for variable 'sin_reg' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:92]
+WARNING: [Synth 8-327] inferring latch for variable 'cos_reg' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v:93]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                START_TO |                               01 |                               01
+                 WAIT_TO |                               10 |                               10
+               FINISH_TO |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cstate_reg' using encoding 'sequential' in module 'int2float'
+WARNING: [Synth 8-327] inferring latch for variable 'sin_reg' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/int2float.v:71]
+WARNING: [Synth 8-327] inferring latch for variable 'cos_reg' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/int2float.v:72]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                START_TO |                               01 |                               01
+               FINISH_TO |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cstate_reg' using encoding 'sequential' in module 'bin2bcd_54bits'
+WARNING: [Synth 8-327] inferring latch for variable 'sin_bcd_reg' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v:103]
+WARNING: [Synth 8-327] inferring latch for variable 'cos_bcd_reg' [E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v:104]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 872.168 ; gain = 511.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     54 Bit       Adders := 32    
+	   2 Input     32 Bit       Adders := 16    
+	   3 Input     32 Bit       Adders := 32    
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 34    
++---Registers : 
+	              122 Bit    Registers := 2     
+	               54 Bit    Registers := 34    
+	               32 Bit    Registers := 50    
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    122 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 32    
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 8     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module switch2bcd 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module bcd2bin 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module key_scan 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module cordic_sin_cos 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 16    
+	   3 Input     32 Bit       Adders := 32    
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 50    
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 32    
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+Module int2float 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     54 Bit       Adders := 32    
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               54 Bit    Registers := 34    
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+Module bin2bcd_54bits 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 34    
++---Registers : 
+	              122 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    122 Bit        Muxes := 8     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module seg_select 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "key_n" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[31]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[30]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[29]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[28]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[27]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[26]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[25]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[24]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[23]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[22]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[21]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[20]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[19]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[18]
+WARNING: [Synth 8-3331] design int2float has unconnected port sin_int[17]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[31]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[30]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[29]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[28]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[27]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[26]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[25]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[24]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[23]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[22]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[21]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[20]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[19]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[18]
+WARNING: [Synth 8-3331] design int2float has unconnected port cos_int[17]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[15] )
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[16]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[21] )
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[22]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[23]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[24]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[25]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[26]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[27]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[28] )
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[29]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[30]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[32] )
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[33]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[35] )
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[36]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[37]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[38]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[39]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[40] )
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[41]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[42]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[46] )
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[47]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[48]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/y0_reg[49]' (FDCE) to 'U6/y0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\y0_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[15] )
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[16]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[21] )
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[22]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[23]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[24]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[25]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[26]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[27]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[28] )
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[29]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[30]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[32] )
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[33]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[35] )
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[36]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[37]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[38]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[39]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[40] )
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[41]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[42]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[46] )
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[47]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[48]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U6/x0_reg[49]' (FDCE) to 'U6/x0_reg[53]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U6/\x0_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/z0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/z0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/x0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/x0_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/x0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/x0_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/x0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/x0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/x0_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/x0_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/x0_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/x0_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/y0_reg[19] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U6/y1_reg[23]' (FDCE) to 'U6/y1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U6/y1_reg[24]' (FDCE) to 'U6/y1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U6/y1_reg[25]' (FDCE) to 'U6/y1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U6/y1_reg[37]' (FDCE) to 'U6/y1_reg[38]'
+INFO: [Synth 8-3886] merging instance 'U6/y1_reg[44]' (FDCE) to 'U6/y1_reg[45]'
+INFO: [Synth 8-3886] merging instance 'U6/x1_reg[23]' (FDCE) to 'U6/x1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U6/x1_reg[24]' (FDCE) to 'U6/x1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U6/x1_reg[25]' (FDCE) to 'U6/x1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U6/x1_reg[37]' (FDCE) to 'U6/x1_reg[38]'
+INFO: [Synth 8-3886] merging instance 'U6/x1_reg[44]' (FDCE) to 'U6/x1_reg[45]'
+INFO: [Synth 8-3886] merging instance 'U5/z1_reg[25]' (FDCE) to 'U5/z1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U5/z1_reg[26]' (FDCE) to 'U5/z1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U5/z1_reg[27]' (FDCE) to 'U5/z1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U5/z1_reg[28]' (FDCE) to 'U5/z1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U5/z1_reg[29]' (FDCE) to 'U5/z1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U5/z1_reg[30]' (FDCE) to 'U5/z1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[13]' (FDCE) to 'U5/x1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[16]' (FDCE) to 'U5/x1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[17]' (FDCE) to 'U5/x1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[18]' (FDCE) to 'U5/x1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[19]' (FDCE) to 'U5/x1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[20]' (FDCE) to 'U5/x1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[21]' (FDCE) to 'U5/x1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[22]' (FDCE) to 'U5/x1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[23]' (FDCE) to 'U5/x1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[24]' (FDCE) to 'U5/x1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[25]' (FDCE) to 'U5/x1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[26]' (FDCE) to 'U5/x1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[27]' (FDCE) to 'U5/x1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[28]' (FDCE) to 'U5/x1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[29]' (FDCE) to 'U5/x1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U5/x1_reg[30]' (FDCE) to 'U5/x1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U5/z2_reg[9]' (FDCE) to 'U5/z2_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U5/z2_reg[10]' (FDCE) to 'U5/z2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U5/z2_reg[13]' (FDCE) to 'U5/z2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U6/y2_reg[24]' (FDCE) to 'U6/y2_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U6/x2_reg[24]' (FDCE) to 'U6/x2_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U5/z2_reg[26]' (FDCE) to 'U5/z2_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U5/z2_reg[27]' (FDCE) to 'U5/z2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U5/z2_reg[28]' (FDCE) to 'U5/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U5/z2_reg[29]' (FDCE) to 'U5/z2_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U5/z2_reg[30]' (FDCE) to 'U5/z2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U5/z3_reg[27]' (FDCE) to 'U5/z3_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U5/z3_reg[28]' (FDCE) to 'U5/z3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U5/z3_reg[29]' (FDCE) to 'U5/z3_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U5/z3_reg[30]' (FDCE) to 'U5/z3_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U5/z4_reg[28]' (FDCE) to 'U5/z4_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U5/z4_reg[29]' (FDCE) to 'U5/z4_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U5/z4_reg[30]' (FDCE) to 'U5/z4_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U5/z5_reg[29]' (FDCE) to 'U5/z5_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U5/z5_reg[30]' (FDCE) to 'U5/z5_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U5/z6_reg[30]' (FDCE) to 'U5/z6_reg[31]'
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[31]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[30]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[29]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[28]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[27]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[26]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[25]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[24]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[23]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[22]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[21]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[20]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[19]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[18]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/sin_reg[17]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[31]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[30]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[29]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[28]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[27]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[26]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[25]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[24]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[23]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[22]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[21]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[20]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[19]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[18]) is unused and will be removed from module Cordic_top.
+WARNING: [Synth 8-3332] Sequential element (U5/cos_reg[17]) is unused and will be removed from module Cordic_top.
+INFO: [Synth 8-3886] merging instance 'U6/y1_reg[15]' (FDCE) to 'U6/y1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U6/x1_reg[15]' (FDCE) to 'U6/x1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U6/y2_reg[14]' (FDCE) to 'U6/y2_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U6/x2_reg[14]' (FDCE) to 'U6/x2_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U6/y3_reg[13]' (FDCE) to 'U6/y3_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U6/x3_reg[13]' (FDCE) to 'U6/x3_reg[19]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 872.168 ; gain = 511.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 872.168 ; gain = 511.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 872.168 ; gain = 511.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 891.309 ; gain = 530.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop U5/z0_reg[17] is being inverted and renamed to U5/z0_reg[17]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 891.309 ; gain = 530.484
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 891.309 ; gain = 530.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 891.309 ; gain = 530.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 891.309 ; gain = 530.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 891.309 ; gain = 530.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 891.309 ; gain = 530.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Cordic_top  | U6/x4_reg[16]  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x5_reg[15]  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x6_reg[14]  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x7_reg[13]  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x8_reg[12]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x9_reg[11]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x10_reg[10] | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x11_reg[9]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x12_reg[8]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x13_reg[7]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x14_reg[6]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x16_reg[5]  | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x16_reg[4]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/x16_reg[3]  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y4_reg[16]  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y5_reg[15]  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y6_reg[14]  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y7_reg[13]  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y8_reg[12]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y9_reg[11]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y10_reg[10] | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y11_reg[9]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y12_reg[8]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y13_reg[7]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y14_reg[6]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y16_reg[5]  | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y16_reg[4]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Cordic_top  | U6/y16_reg[3]  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |   693|
+|3     |LUT1   |   170|
+|4     |LUT2   |  1441|
+|5     |LUT3   |  1557|
+|6     |LUT4   |   100|
+|7     |LUT5   |    64|
+|8     |LUT6   |    98|
+|9     |MUXF7  |     4|
+|10    |SRL16E |    28|
+|11    |FDCE   |  3063|
+|12    |FDPE   |     1|
+|13    |FDRE   |    58|
+|14    |FDSE   |     1|
+|15    |LD     |   166|
+|16    |IBUF   |    13|
+|17    |OBUF   |    27|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               |  7488|
+|2     |  U1     |switch2bcd     |    29|
+|3     |  U2     |display        |    44|
+|4     |    U1   |seg7           |     7|
+|5     |  U4     |key_scan       |    65|
+|6     |  U5     |cordic_sin_cos |  3248|
+|7     |  U6     |int2float      |  3428|
+|8     |  U7     |bin2bcd_54bits |   590|
+|9     |  U8     |seg_select     |    40|
++------+---------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 891.309 ; gain = 530.484
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 891.309 ; gain = 175.117
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 891.309 ; gain = 530.484
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 863 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 891.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 166 instances were transformed.
+  LD => LDCE: 166 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+291 Infos, 97 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:27 . Memory (MB): peak = 891.309 ; gain = 542.707
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 891.309 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado/Cordic_calculator/Cordic_calculator.runs/synth_1/Cordic_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Cordic_top_utilization_synth.rpt -pb Cordic_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 06:07:13 2023...

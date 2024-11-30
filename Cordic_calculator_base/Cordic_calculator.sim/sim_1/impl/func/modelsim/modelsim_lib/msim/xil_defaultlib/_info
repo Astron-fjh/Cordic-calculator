@@ -1,0 +1,275 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Vivado/Cordic_calculator/Cordic_calculator.sim/sim_1/impl/func/modelsim
+T_opt
+!s110 1699825638
+VAii2eN0H@RHl[GZJCDF4f0
+04 9 4 work testbench fast 0
+04 4 4 work glbl fast 0
+=1-c01850ceb55d-655147e5-3bd-137ac
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L secureip +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vbin2bcd_54bits
+Z2 !s110 1699825631
+!i10b 1
+!s100 ^U8@V7>OARONFIXW5;=AW3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IH6:FEm[S]LJ:G>gNi`bh32
+R0
+Z4 w1699825631
+Z5 8testbench_func_impl.v
+Z6 Ftestbench_func_impl.v
+!i122 0
+L0 588 5535
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z9 !s108 1699825631.000000
+Z10 !s107 ../../../../../Cordic_calculator.srcs/sim_1/new/testbench.v|testbench_func_impl.v|
+Z11 !s90 -64|-incr|-work|xil_defaultlib|testbench_func_impl.v|../../../../../Cordic_calculator.srcs/sim_1/new/testbench.v|
+!i113 0
+Z12 o-64 -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vcordic_sin_cos
+Z13 !s110 1699825632
+!i10b 1
+!s100 YkOB?0aJM6HMNGBj0SGk@2
+R3
+II_HkAH_mO?W`H>Pm=oLii2
+R0
+R4
+R5
+R6
+!i122 0
+L0 6124 27756
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+vCordic_top
+R2
+!i10b 1
+!s100 OE_z>@RT0QX[LP:Nbo3b70
+R3
+IH1Z2?UH0D7XVIS5Vd3TXm1
+R0
+R4
+R5
+R6
+!i122 0
+L0 17 570
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+n@cordic_top
+vdisplay
+R13
+!i10b 1
+!s100 a88C;2W<51^<<J3eoTA[_2
+R3
+I]>oQgn1G9O2<dMo@=J7JV3
+R0
+R4
+R5
+R6
+!i122 0
+L0 33881 364
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+vglbl
+R13
+!i10b 1
+!s100 1PbDm1oI`SdQjcWC9[3^h1
+R3
+I:YLn7>UN:BZLnolHK`<fg1
+R0
+R4
+R5
+R6
+!i122 0
+L0 64654 65
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+vint2float
+R13
+!i10b 1
+!s100 nA7N;^YMd2Z23m8mmAo[R1
+R3
+Ik6?cEDM]9hWMJXDAC4h?n1
+R0
+R4
+R5
+R6
+!i122 0
+L0 34246 29041
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+vkey_scan
+R13
+!i10b 1
+!s100 KfH]Y1?=>U@nA[D?R1gWj3
+R3
+I<Y5Saj0g?^1zYgGK;^hJ@1
+R0
+R4
+R5
+R6
+!i122 0
+L0 63288 584
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+vseg7
+R13
+!i10b 1
+!s100 YlR`e96=AP>P^annTJVml2
+R3
+IQM?IXL@F;76cPh<@`:fO@0
+R0
+R4
+R5
+R6
+!i122 0
+L0 63873 72
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+vseg_select
+R13
+!i10b 1
+!s100 GSIJWcLBPYn5Kee;0Jm5c2
+R3
+I8caEz:Z4dB3cZ;4977DX90
+R0
+R4
+R5
+R6
+!i122 0
+L0 63946 390
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+vswitch2bcd
+R13
+!i10b 1
+!s100 No>:eAARG[nm2U00aT[D50
+R3
+IzabHbjB9Fc4mO?WBIzN[d1
+R0
+R4
+R5
+R6
+!i122 0
+L0 64337 313
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+vtestbench
+R13
+!i10b 1
+!s100 <`En6713EWHcm1k`94Nnm0
+R3
+IMj=DkBmPZW^C496PaMEJ@1
+R0
+w1699822345
+8../../../../../Cordic_calculator.srcs/sim_1/new/testbench.v
+F../../../../../Cordic_calculator.srcs/sim_1/new/testbench.v
+!i122 0
+L0 12 69
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1

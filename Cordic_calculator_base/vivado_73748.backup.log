@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 13 06:11:51 2023
+# Process ID: 73748
+# Current directory: E:/Vivado/Cordic_calculator_base
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent62776 E:\Vivado\Cordic_calculator_base\Cordic_calculator.xpr
+# Log file: E:/Vivado/Cordic_calculator_base/vivado.log
+# Journal file: E:/Vivado/Cordic_calculator_base\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Vivado/Cordic_calculator_base/Cordic_calculator.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Vivado/Cordic_calculator' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/Vivado/Cordic_calculator_base/Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits_new.v', nor could it be found using path 'E:/Vivado/Cordic_calculator/Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits_new.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Vivado/Cordic_calculator_base/Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits_new.v] -no_script -reset -force -quiet
+remove_files  E:/Vivado/Cordic_calculator_base/Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits_new.v
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183741427A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183741427A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183741427A
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator_base/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Vivado/Cordic_calculator_base/Cordic_calculator.runs/impl_1/Cordic_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183741427A
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 19:47:24 2023...

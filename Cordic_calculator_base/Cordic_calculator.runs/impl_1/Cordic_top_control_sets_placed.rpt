@@ -1,0 +1,118 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 13 06:07:44 2023
+| Host         : FJH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Cordic_top_control_sets_placed.rpt
+| Design       : Cordic_top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    50 |
+| Unused register locations in slices containing registers |   191 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      4 |           34 |
+|      6 |            2 |
+|      7 |            3 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             166 |           55 |
+| No           | No                    | Yes                    |              60 |           21 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              58 |           21 |
+| Yes          | No                    | Yes                    |            3004 |          757 |
+| Yes          | Yes                   | No                     |               1 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+-------------------------+-------------------+------------------+----------------+
+|   Clock Signal   |      Enable Signal      |  Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------+-------------------------+-------------------+------------------+----------------+
+|  clk_IBUF_BUFG   | U4/key_n                | reset_IBUF        |                1 |              1 |
+|  clk_IBUF_BUFG   | U2/digit                | U2/ans[2]_i_1_n_2 |                1 |              1 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[117]  | reset_IBUF        |                2 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[61]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[97]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[77]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[69]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[81]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[97]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[93]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[101]  | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[85]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[89]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[61]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[57]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[65]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[77]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[73]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[105]  | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[109]  | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[121]  | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cos_data_shift[113]  | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[81]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[89]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[113]  | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[117]  | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[69]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[93]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[121]  | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[85]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[57]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[101]  | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[65]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[105]  | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[109]  | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[73]   | reset_IBUF        |                1 |              4 |
+|  clk_IBUF_BUFG   | U7/cnt_shift[5]_i_1_n_2 | reset_IBUF        |                2 |              6 |
+|  clk_IBUF_BUFG   | U2/digit                |                   |                3 |              6 |
+|  clk_IBUF_BUFG   | U7/count                | reset_IBUF        |                2 |              7 |
+|  clk_IBUF_BUFG   | U5/count[6]_i_1__0_n_2  | reset_IBUF        |                4 |              7 |
+|  clk_IBUF_BUFG   | U6/count[6]_i_1_n_2     | reset_IBUF        |                3 |              7 |
+|  bcd_finish_BUFG |                         |                   |               10 |             24 |
+|  clk_IBUF_BUFG   | bcd_finish_BUFG         |                   |                9 |             24 |
+|  n_1_661_BUFG    |                         |                   |               14 |             34 |
+|  clk_IBUF_BUFG   | U6/x0[53]_i_1_n_2       |                   |                9 |             56 |
+|  clk_IBUF_BUFG   |                         | reset_IBUF        |               21 |             60 |
+|  clk_IBUF_BUFG   | U7/sin_data_shift[53]   | reset_IBUF        |               15 |            108 |
+|  n_0_638_BUFG    |                         |                   |               31 |            108 |
+|  clk_IBUF_BUFG   | U6/x0[53]_i_1_n_2       | reset_IBUF        |              349 |           1353 |
+|  clk_IBUF_BUFG   | U5/x0_1                 | reset_IBUF        |              346 |           1379 |
++------------------+-------------------------+-------------------+------------------+----------------+
+
+

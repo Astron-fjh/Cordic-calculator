@@ -1,0 +1,39 @@
+# do {testbench_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 05:29:05 on Nov 13,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../Cordic_calculator.srcs/sources_1/new/Cordic_top.v ../../../../Cordic_calculator.srcs/sources_1/new/bcd2bin.v ../../../../Cordic_calculator.srcs/sources_1/new/bin2bcd_54bits.v ../../../../Cordic_calculator.srcs/sources_1/new/cordic_sin_cos.v ../../../../Cordic_calculator.srcs/sources_1/new/display.v ../../../../Cordic_calculator.srcs/sources_1/new/int2float.v ../../../../Cordic_calculator.srcs/sources_1/new/key_scan.v ../../../../Cordic_calculator.srcs/sources_1/new/seg7.v ../../../../Cordic_calculator.srcs/sources_1/new/seg_select.v ../../../../Cordic_calculator.srcs/sources_1/new/switch2bcd.v ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v 
+# -- Compiling module Cordic_top
+# -- Skipping module bcd2bin
+# -- Compiling module bin2bcd_54bits
+# -- Skipping module cordic_sin_cos
+# -- Skipping module display
+# -- Skipping module int2float
+# -- Skipping module key_scan
+# -- Skipping module seg7
+# -- Compiling module seg_select
+# -- Skipping module switch2bcd
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 05:29:05 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 05:29:05 on Nov 13,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 05:29:05 on Nov 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

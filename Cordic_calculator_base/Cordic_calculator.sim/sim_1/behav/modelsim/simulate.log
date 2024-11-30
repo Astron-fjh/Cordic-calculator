@@ -1,0 +1,66 @@
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {testbench_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.testbench xil_defaultlib.glbl 
+# Start time: 05:29:10 on Nov 13,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "cordic_sin_cos(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "int2float(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "bin2bcd_54bits(fast)".
+# ** Warning: ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v(22): (vopt-2685) [TFMPC] - Too few port connections for 'Cordic_calculator'.  Expected 16, found 15.
+# ** Warning: ../../../../Cordic_calculator.srcs/sim_1/new/testbench.v(22): (vopt-2718) [TFMPC] - Missing connection for port 'sin'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.testbench(fast)
+# Loading work.Cordic_top(fast)
+# Loading work.switch2bcd(fast)
+# Loading work.display(fast)
+# Loading work.seg7(fast)
+# Loading work.bcd2bin(fast)
+# Loading work.key_scan(fast)
+# Loading work.cordic_sin_cos(fast)
+# Loading work.int2float(fast)
+# Loading work.bin2bcd_54bits(fast)
+# Loading work.seg_select(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: jieho  Hostname: FJH  ProcessID: 22004
+#           Attempting to use alternate WLF file "./wlfti6f72x".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfti6f72x
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position end sim:/testbench/Cordic_calculator/U7/*
+add wave -position 16 sim:/testbench/Cordic_calculator/U6/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.testbench(fast)
+# Loading work.Cordic_top(fast)
+# Loading work.switch2bcd(fast)
+# Loading work.display(fast)
+# Loading work.seg7(fast)
+# Loading work.bcd2bin(fast)
+# Loading work.key_scan(fast)
+# Loading work.cordic_sin_cos(fast)
+# Loading work.int2float(fast)
+# Loading work.bin2bcd_54bits(fast)
+# Loading work.seg_select(fast)
+# Loading work.glbl(fast)
+run -all
+# End time: 05:32:47 on Nov 13,2023, Elapsed time: 0:03:37
+# Errors: 0, Warnings: 2

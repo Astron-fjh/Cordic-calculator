@@ -1,0 +1,130 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Nov 17 17:15:18 2023
+| Host         : FJH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Cordic_top_control_sets_placed.rpt
+| Design       : Cordic_top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    59 |
+| Unused register locations in slices containing registers |   215 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |           38 |
+|      6 |            1 |
+|      7 |            3 |
+|      8 |            2 |
+|     10 |            1 |
+|     14 |            1 |
+|    16+ |           12 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             187 |           59 |
+| No           | No                    | Yes                    |             168 |           54 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              71 |           21 |
+| Yes          | No                    | Yes                    |            3051 |          776 |
+| Yes          | Yes                   | No                     |              12 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+--------------------------+--------------------------+------------------+----------------+
+|   Clock Signal   |       Enable Signal      |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++------------------+--------------------------+--------------------------+------------------+----------------+
+|  clk_25M_BUFG    |                          |                          |                1 |              1 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[73]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U2/key_clk_neg           | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U3/angle_bcd[3]_i_2_n_2  | U3/angle_bcd[3]_i_1_n_2  |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[77]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[93]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[97]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[113]   | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[57]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[105]   | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[85]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[117]   | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[81]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[101]   | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[89]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U3/angle_bcd[7]_i_2_n_2  | U3/angle_bcd[7]_i_1_n_2  |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[65]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[121]   | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[61]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[109]   | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cos_data_shift[69]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[57]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[61]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[65]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[89]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[85]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[81]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[77]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[69]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[73]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[93]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[97]    | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[121]   | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[113]   | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[105]   | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[109]   | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[117]   | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[101]   | reset_IBUF               |                1 |              4 |
+|  clk_IBUF_BUFG   | U3/angle_bcd[11]_i_2_n_2 | U3/angle_bcd[11]_i_1_n_2 |                1 |              4 |
+|  clk_IBUF_BUFG   | U8/cnt_shift[5]_i_1_n_2  | reset_IBUF               |                2 |              6 |
+|  clk_IBUF_BUFG   | U7/count[6]_i_1__0_n_2   | reset_IBUF               |                3 |              7 |
+|  clk_IBUF_BUFG   | U8/count                 | reset_IBUF               |                2 |              7 |
+|  clk_IBUF_BUFG   | U6/count[6]_i_1_n_2      | reset_IBUF               |                3 |              7 |
+|  clk_IBUF_BUFG   | U2/xkey[7]_i_1_n_2       |                          |                2 |              8 |
+|  clk_IBUF_BUFG   | U3/temp_data             |                          |                2 |              8 |
+|  clk_25M_BUFG    | U10/vsenable_reg_n_2     | reset_IBUF               |                5 |             10 |
+|  clk_IBUF_BUFG   | U3/x0                    | reset_IBUF               |                6 |             14 |
+|  clk_IBUF_BUFG   | U2/E[0]                  | reset_IBUF               |                5 |             16 |
+|  clk_IBUF_BUFG   |                          |                          |                7 |             18 |
+|  bcd_finish_BUFG |                          |                          |                8 |             24 |
+|  clk_IBUF_BUFG   | bcd_finish_BUFG          |                          |                9 |             27 |
+|  n_1_118_BUFG    |                          |                          |               10 |             36 |
+|  clk_IBUF_BUFG   |                          | reset_IBUF               |               20 |             49 |
+|  clk_IBUF_BUFG   | U7/x0[53]_i_1_n_2        |                          |                8 |             56 |
+|  clk_IBUF_BUFG   | U8/sin_data_shift[53]    | reset_IBUF               |               16 |            108 |
+|  n_0_2190_BUFG   |                          |                          |               33 |            108 |
+|  clk_25M_BUFG    |                          | reset_IBUF               |               34 |            119 |
+|  clk_IBUF_BUFG   | U7/x0[53]_i_1_n_2        | reset_IBUF               |              345 |           1353 |
+|  clk_IBUF_BUFG   | U6/x1                    | reset_IBUF               |              354 |           1383 |
++------------------+--------------------------+--------------------------+------------------+----------------+
+
+
