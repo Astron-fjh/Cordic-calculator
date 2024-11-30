@@ -33,7 +33,7 @@
   5. 计算结果通过四个数码管的显示
 
 - `./Cordic_calculate_expand`：
-  - 相比`./Cordic_calculate_base`，计算角度扩展到$0-360°$
+  - 相比`./Cordic_calculate_base`，计算角度扩展到 $0-360°$
 
 - `./Cordic_calculate_vga`：
   - 相比`./Cordic_calculate_expand`，增加了VGA显示功能
