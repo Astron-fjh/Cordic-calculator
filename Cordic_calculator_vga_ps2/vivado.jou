@@ -2,31 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Jan 21 13:51:57 2024
-# Process ID: 14304
-# Current directory: E:/Vivado/Cordic_calculator_vga_ps2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32164 E:\Vivado\Cordic_calculator_vga_ps2\Cordic_calculator.xpr
-# Log file: E:/Vivado/Cordic_calculator_vga_ps2/vivado.log
-# Journal file: E:/Vivado/Cordic_calculator_vga_ps2\vivado.jou
+# Start of session at: Sat Nov 30 14:14:33 2024
+# Process ID: 16696
+# Current directory: E:/Github_project/Cordic_calculator/Cordic_calculator_vga_ps2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18396 E:\Github_project\Cordic_calculator\Cordic_calculator_vga_ps2\Cordic_calculator.xpr
+# Log file: E:/Github_project/Cordic_calculator/Cordic_calculator_vga_ps2/vivado.log
+# Journal file: E:/Github_project/Cordic_calculator/Cordic_calculator_vga_ps2\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project E:/Vivado/Cordic_calculator_vga_ps2/Cordic_calculator.xpr
-update_compile_order -fileset sources_1
-open_run impl_1
-report_utilization -name utilization_1
-create_clock -period 10.000 -name clk -waveform {0.000 5.000}
-reset_run synth_1
-set_property target_constrs_file E:/Vivado/Cordic_calculator_vga_ps2/Cordic_calculator.srcs/constrs_1/new/Cordic_calculator.xdc [current_fileset -constrset]
-save_constraints -force
-launch_runs impl_1 -jobs 20
-wait_on_run impl_1
-close_design
-open_run impl_1
-reset_run synth_1
-launch_runs impl_1 -jobs 20
-wait_on_run impl_1
-close_design
-open_run impl_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
-report_clock_networks -name {network_1}
-synth_design -rtl -name rtl_1
+open_project E:/Github_project/Cordic_calculator/Cordic_calculator_vga_ps2/Cordic_calculator.xpr
